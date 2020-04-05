@@ -19,7 +19,7 @@ CREATE DATABASE database_name;
 A specific example (best to use snake_case or camelCase, no whitespace):
 
 ```sql
-CREATE DATABASE soap_store; 
+CREATE DATABASE someCrazy_DatabaseName; 
 ```
 
 ## To drop (delete) a database: ##
@@ -31,7 +31,7 @@ DROP DATABASE database_name;
 For example:
 
 ```sql
-DROP DATABASE hello_world_db; 
+DROP DATABASE hello_world; 
 ```
 
 ## Using databases ##
@@ -45,7 +45,7 @@ USE <database name>;
 -- example:
 
 ```sql
-USE dog_walking_app;
+USE some_app;
 ```
 
 Note that MySQL commands need not always end with a semicolon, however, all SQL statements must end with a semicolon. Then check which database is in use with
@@ -60,12 +60,12 @@ If there is no database in use then a NULL database will be returned
 
 SQL data types can be broadly divided into following categories.
 
-1. Numeric data types such as ``int, tinyint, bigint, float, real`` etc.
-2. Date and Time data types such as ``Date, Time, Datetime`` etc.
-3. Character and String data types such as ``char, varchar, text`` etc.
-4. Unicode character string data types, for example ``nchar, nvarchar, ntext`` etc.
-5. Binary data types such as ``binary, varbinary`` etc.
-6. Miscellaneous data types – ``clob, blob, xml, cursor, table`` etc.
+1. Numeric data types such as ``int, tinyint, bigint, float, real``
+2. Date and Time data types such as ``Date, Time, Datetime``
+3. Character and String data types such as ``char, varchar, text``
+4. Unicode character string data types, for example ``nchar, nvarchar, ntext``
+5. Binary data types such as ``binary, varbinary``
+6. Miscellaneous data types – ``clob, blob, xml, cursor, table``
 
 ## Creating, verifying and dropping tables ##
 
@@ -82,9 +82,9 @@ CREATE TABLE tablename
 For example, the table called cats (varchar() sets the maximum number of chars):
 
 ```sql
-CREATE TABLE cats
+CREATE TABLE dogs
   (
-    name VARCHAR(100),
+    name VARCHAR(75),
     age INT
   );
 ```
@@ -118,5 +118,5 @@ DROP TABLE <tablename>;
 A specific example:
 
 ```sql
-DROP TABLE cats; 
+DROP TABLE dogs; 
 ```
