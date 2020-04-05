@@ -1,0 +1,5 @@
+#lists files and folders which are ignored by Git
+$ cat .gitignore
+
+#What's ignored:
+*.db
