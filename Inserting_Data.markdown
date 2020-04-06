@@ -51,7 +51,7 @@ SHOW WARNINGS;
 ```
 
 ### NULL, NOT NULL and DEFAULT ###
-NULL is undefined. Setting columns as NOT NULL forces MySQL to reject all NULL entries and then tries to set the DEFAULT if set. Any entry which tries to set NULL (and has no DEFAULT)for NOT NULL columns returns an error.
+NULL is undefined. Setting columns as NOT NULL forces MySQL to reject all NULL entries (i.e. a value is required) and then tries to set the DEFAULT if set.
 
 If there are no default values set and the column is labelled NOT NULL (see below) when a table is created, then MySQL will insert zero for INT data types and empty strings '' for VARCHAR().
 
