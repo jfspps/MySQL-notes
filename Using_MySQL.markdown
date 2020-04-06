@@ -120,3 +120,7 @@ A specific example:
 ```sql
 DROP TABLE dogs; 
 ```
+
+## Comments ##
+
+Press CTRL-slash to toggle comments for a selected script. Or use -- before each line.
