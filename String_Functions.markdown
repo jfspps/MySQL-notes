@@ -66,7 +66,7 @@ SELECT REPLACE(' man_and bananas', ' ', ' the ');
 
 + __Reversing strings with REVERSE__
 
-``sql
+```sql
 SELECT REVERSE('1234567890');
 ```
 
