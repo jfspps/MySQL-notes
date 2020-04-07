@@ -91,19 +91,19 @@ CREATE TABLE dogs
 
 One can then verify that a table was created by running any of the following commands.
 
-This command doesn't really give much feedback, look for no "empty set" and everything seems fine.
+This command lists the tables present in a database.
 
 ```sql
 SHOW TABLES;
 ```
 
-This command is more informative:
+The next two commands list the column properties of a table:
 
 ```sql
 SHOW COLUMNS FROM tablename;
 ```
 
-This DESC (describe)command gives the same output to the previous command:
+The DESC (describe) command provides similar output:
 
 ```sql
 DESC tablename;
