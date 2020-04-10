@@ -92,14 +92,3 @@ SELECT LOWER("NO try ME");
 ```
 
 The above statements result in 'TRY ME' and "no try me".
-
-+ Example of a formatted statement:
-
-```sql
-SELECT 
-	CONCAT(SUBSTRING(title, 1, 10), '...') AS 'short title', 
-	CONCAT(author_lname, ',', author_fname) AS 'author', 
-	CONCAT(stock_quantity, ' in stock') AS 'quantity'
-	FROM books 
-	WHERE released_year = 2001;
-```
