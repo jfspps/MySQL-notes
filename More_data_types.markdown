@@ -72,7 +72,7 @@ These functions extract parts of the `DATE`, `TIME` and `DATETIME` values.
 
   a. `DAY(CURDATE())` returns the number of the month for the current day
   b. `DAYNAME(CURDATE())` returns the name of the current day
-  c. `DAYOFWEEK(CURDATE())` returns the number of the week for the current day (Sunday = 1)
+  c. `DAYOFWEEK(CURDATE())` returns the number of the week for the current day (Sunday = 0)
   d. `DAYOFYEAR(CURDATE()`) returns the number of the year for the current day
 
 Attempting to extract day numbers from `TIME` based values returns `NULL`.
