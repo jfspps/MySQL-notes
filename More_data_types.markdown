@@ -70,10 +70,10 @@ INSERT INTO tableName(currentDate, randomDT)
 
 These functions extract parts of the `DATE`, `TIME` and `DATETIME` values.
 
-  a. `DAY(CURDATE())` returns the number of the month for the current day
-  b. `DAYNAME(CURDATE())` returns the name of the current day
-  c. `DAYOFWEEK(CURDATE())` returns the number of the week for the current day (Sunday = 1)
-  d. `DAYOFYEAR(CURDATE()`) returns the number of the year for the current day
+- `DAY(CURDATE())` returns the number of the month for the current day
+- `DAYNAME(CURDATE())` returns the name of the current day
+- `DAYOFWEEK(CURDATE())` returns the number of the week for the current day (Sunday = 1)
+- `DAYOFYEAR(CURDATE()`) returns the number of the year for the current day
 
 Attempting to extract day numbers from `TIME` based values returns `NULL`.
 
@@ -113,8 +113,8 @@ The math expressions can be strung with more terms (HOUR or SECOND etc.)
 
 TIMESTAMP is very similar to DATETIME except for:
 
-  a. DATETIME has a much larger time period range whereas TIMESTAMP starts at the year 1970 and finishes around year 2038. 
-  b. TIMESTAMP requires less memory to store
+- DATETIME has a much larger time period range whereas TIMESTAMP starts at the year 1970 and finishes around year 2038.
+- TIMESTAMP requires less memory to store.
 
 TIMESTAMP is useful for sotring time and date when records are created or edited. For example:
 
