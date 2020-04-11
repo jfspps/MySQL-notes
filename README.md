@@ -8,3 +8,4 @@ My notes from an online MySQL course
 5. [More refined searching](Refined_selections.markdown)
 6. [In-built calculations](Aggregate_Functions.markdown)
 7. [More data types](More_data_types.markdown)
+8. [More operators](Operators.markdown)
