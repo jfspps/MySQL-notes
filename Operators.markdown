@@ -189,3 +189,13 @@ SELECT publicationTitle AS 'Publication', CASE
     end as 'Category'
     from publicationsTable;
 ```
+One can also group results:
+
+```sql
+SELECT Category, author, CASE
+    WHEN COUNT(*) = 1 THEN CONCAT(COUNT(*), ' paper')
+    ELSE CONCAT(COUNT(*), ' papers')
+    END AS 'Number of papers'
+    FROM publiationList
+    GROUP BY author;
+```
