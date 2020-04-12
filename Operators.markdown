@@ -169,7 +169,7 @@ It is highly recommended to set the title of the column (in this case as 'Column
 One can apply mutiple `WHEN` and `THEN` statements.
 
 ```sql
-SELECT someTitle
+SELECT someTitle,
 	CASE
 	WHEN someValue BETWEEN low1 AND mid1 THEN newValue = 'pass'
 	WHEN someValue BETWEEN mid2 AND mid3 THEN newValue = 'merit'
@@ -179,4 +179,4 @@ SELECT someTitle
 FROM someTable;
 ```
 
-Once one of the WHEN statements have been satisfied, MySQL then proceeds with the next row and starts from the beginning of the CASE block.
+Once one of the WHEN statements have been satisfied, MySQL then proceeds with the next row and starts from the beginning of the CASE block. Do not forget the comma preceding the CASE statement!
