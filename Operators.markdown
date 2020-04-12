@@ -40,7 +40,7 @@ SELECT 'Mm' >= 'mM';
 SELECT 'M' = 'm';
 ```
 
-Both call above return 1, since MySQL comparison are case-insensitive. Letters are based on their alphabetical position:
+All calls above return 1, since MySQL comparison are case-insensitive. Letters are based on their alphabetical position:
 
 ```sql
 SELECT 'a' > 'l';
