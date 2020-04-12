@@ -180,3 +180,12 @@ FROM someTable;
 ```
 
 Once one of the WHEN statements have been satisfied, MySQL then proceeds with the next row and starts from the beginning of the CASE block. Do not forget the comma preceding the CASE statement!
+
+```sql
+SELECT publicationTitle AS 'Publication', CASE
+    WHEN title LIKE '%chemistry%' then 'Chemistry'
+    when title = 'Monograph' || title like 'A study%' then 'Monograph'
+    else 'Misc'
+    end as 'Category'
+    from publicationsTable;
+```
