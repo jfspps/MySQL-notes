@@ -10,4 +10,4 @@ My notes from an online MySQL course
 7. [More data types](More_data_types.markdown)
 8. [More operators](Operators.markdown)
 9. [One-to-many JOINs](One_to_many_JOIN.markdown)
-10. [Many-to-many JOINs](Many_to_Many_JOIN.markdown)
+10. [Many-to-many JOINs](Many_to_many_JOIN.markdown)
