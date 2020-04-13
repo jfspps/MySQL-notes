@@ -40,7 +40,7 @@ SELECT 'Mm' >= 'mM';
 SELECT 'M' = 'm';
 ```
 
-Both call above return 1, since MySQL comparison are case-insensitive. Letters are based on their alphabetical position:
+All calls above return 1, since MySQL comparison are case-insensitive. Letters are based on their alphabetical position:
 
 ```sql
 SELECT 'a' > 'l';
@@ -169,7 +169,7 @@ It is highly recommended to set the title of the column (in this case as 'Column
 One can apply mutiple `WHEN` and `THEN` statements.
 
 ```sql
-SELECT someTitle
+SELECT someTitle,
 	CASE
 	WHEN someValue BETWEEN low1 AND mid1 THEN newValue = 'pass'
 	WHEN someValue BETWEEN mid2 AND mid3 THEN newValue = 'merit'
@@ -179,4 +179,23 @@ SELECT someTitle
 FROM someTable;
 ```
 
-Once one of the WHEN statements have been satisfied, MySQL then proceeds with the next row and starts from the beginning of the CASE block.
+Once one of the WHEN statements have been satisfied, MySQL then proceeds with the next row and starts from the beginning of the CASE block. Do not forget the comma preceding the CASE statement!
+
+```sql
+SELECT publicationTitle AS 'Publication', CASE
+    WHEN title LIKE '%chemistry%' then 'Chemistry'
+    when title = 'Monograph' || title like 'A study%' then 'Monograph'
+    else 'Misc'
+    end as 'Category'
+    from publicationsTable;
+```
+One can also group results:
+
+```sql
+SELECT Category, author, CASE
+    WHEN COUNT(*) = 1 THEN CONCAT(COUNT(*), ' paper')
+    ELSE CONCAT(COUNT(*), ' papers')
+    END AS 'Number of papers'
+    FROM publiationList
+    GROUP BY author;
+```

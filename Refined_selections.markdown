@@ -85,8 +85,8 @@ This statement looks for the sequence `phys` in the `publication` title field. T
 
 Other wildcards are available:
 
-  a. The wildcard _ (one underscore) represents any _single_ character. Two underscores would represent two characters, and so on. The percent sign `%` represent any number of characters.
-  b. Escape sequences enable the search of the wildcard symbols: `\_` and `\%`.
+- The wildcard _ (one underscore) represents any _single_ character. Two underscores would represent two characters, and so on. The percent sign `%` represent any number of characters.
+- Escape sequences enable the search of the wildcard symbols: `\_` and `\%`.
 
 ```sql
 SELECT * FROM someTable WHERE discount LIKE '15\% of%';
