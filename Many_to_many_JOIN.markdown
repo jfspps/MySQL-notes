@@ -1,4 +1,4 @@
-# Many-tomany JOINs #
+# Many-to-many JOINs #
 
 ```sql
 DROP database if exists manytomany;
