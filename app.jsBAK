@@ -1,0 +1,49 @@
+console.log("MySQL notes");
+
+var faker = require('faker');
+var mysql = require('mysql');
+     
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '20wh_BC00',
+  database : 'ig_clone'
+});
+
+console.log("Here is a random email address: ", faker.internet.email());
+
+var q = "SELECT CURDATE() AS 'CurrentDate', CURTIME() AS 'CurrentTime'";
+
+connection.query(q, function(error, results, fields){
+    if (error) throw error;
+    console.log("Connected!");
+    console.log("Today's date is ", results[0].CurrentDate);
+    console.log("The time is ", results[0].CurrentTime)
+});
+
+connection.query("USE ig_clone", function(error, results, fields){
+    if (error){
+        throw error;
+        console.log('Could not use ig_clone');
+    }
+    console.log(results);
+});
+
+connection.query("SELECT id, username, created_at from users", function(error, results, fields){
+    if (error){
+        throw error;
+        console.log('Could not list all users data');
+    }
+    console.log(results[0].id);    //selects the first record
+    console.log(results[0].username);
+    console.log(results[0].created_at);
+    //console.log(results);    // selects all records
+});
+
+//if you get an error authentication (you are asked to upgrade MySQL client), then set mysql to accept old native_password by running the following in MySQL:
+// ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+// this also sets root's password as 'password' (w/o the quotes)
+// then flush privileges in MySQL:
+// flush privileges;
+
+connection.end();
