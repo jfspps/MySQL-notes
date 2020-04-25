@@ -4,3 +4,4 @@ $ cat .gitignore
 #What's ignored:
 *.db
 /node_modules
+*.jsBAK
