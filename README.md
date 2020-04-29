@@ -11,3 +11,4 @@ My notes from an online MySQL course
 8. [More operators](Operators.markdown) using `!=`, `NOT LIKE`, `>`, `>=`, `<`, `<=`, `AND`, `&&`, `OR`, `||`, `BETWEEN`, `NOT BETWEEN`, `IN`, `NOT IN`, `%` and `CASE`
 9. [One-to-many JOINs](One_to_many_JOIN.markdown) with cross `JOIN`s, `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` and `ON DELETE CASCADE`
 10. [Many-to-many JOINs](Many_to_many_JOIN.markdown)
+11. [Trigger in MySQL](Trigger.md)
