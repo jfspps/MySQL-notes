@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# MySQL-notes
+My notes from an online MySQL course
 
-You can use the [editor on GitHub](https://github.com/jfspps/MySQL-notes/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jfspps/MySQL-notes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. [Using MySQL](Using_MySQL.markdown)
+2. [Inserting data](Inserting_Data.markdown)
+3. [Principles of CRUD in MySQL](CRUD.markdown) using `CREATE`, `SELECT`, `UPDATE` and `DELETE`
+4. [Common string functions](String_Functions.markdown) using `CONCAT`, `SUBSTRING`, `REPLACE`, `REVERSE`, `CHAR_LENGTH`, `UPPER` and `LOWER`
+5. [More refined searching](Refined_selections.markdown) using `DISTINCT`, `ORDER BY`, `LIMIT`, `WHERE` and `LIKE`
+6. [In-built calculations](Aggregate_Functions.markdown) using `COUNT`, `GROUP BY`, `MIN`, `MAX`, `SUM` and `AVG`
+7. [More data types](More_data_types.markdown) with `CHAR`, `DECIMAL`, `FLOAT`, `DOUBLE`, `DATE`, `TIME`, `DATETIME`, `CURDATE`, `CURTIME`, `CURDATETIME`, `NOW()`, `TIMESTAMP` and `CURRENT_TIMESTAMP`
+8. [More operators](Operators.markdown) using `!=`, `NOT LIKE`, `>`, `>=`, `<`, `<=`, `AND`, `&&`, `OR`, `||`, `BETWEEN`, `NOT BETWEEN`, `IN`, `NOT IN`, `%` and `CASE`
+9. [One-to-many JOINs](One_to_many_JOIN.markdown) with cross `JOIN`s, `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` and `ON DELETE CASCADE`
+10. [Many-to-many JOINs](Many_to_many_JOIN.markdown)
+11. [Triggers in MySQL](Triggers.md)
