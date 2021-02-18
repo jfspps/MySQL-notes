@@ -12,3 +12,5 @@ My notes from an online MySQL course
 9. [One-to-many JOINs](One_to_many_JOIN.markdown) with cross `JOIN`s, `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` and `ON DELETE CASCADE`
 10. [Many-to-many JOINs](Many_to_many_JOIN.markdown)
 11. [Triggers in MySQL](Triggers.md)
+
+The landing page to the GitHub Pages version of this repo is [here](https://jfspps.github.io/MySQL-notes).
