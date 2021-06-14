@@ -1,6 +1,6 @@
 # One to Many JOINs #
 
-Create the database and tables, with foreign keys to relate each table
+Create the database and tables, with foreign keys (used to identify a specific row or record in a different tabele) to relate each table
 
 ```sql
 CREATE TABLE customers (
