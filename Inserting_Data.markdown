@@ -88,7 +88,7 @@ CREATE TABLE dogs
 ```
 
 ### Primary Keys ###
-A column marked by the PRIMARY KEY column must contain rows with unique values. All other columns can contain duplicated values.
+Primary keys are used to identify a specific row (record) in a table. A column marked by the PRIMARY KEY column must contain rows with unique values. All other columns can contain duplicated values.
 
 ```sql
 CREATE TABLE some_table
