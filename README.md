@@ -1,5 +1,4 @@
-# MySQL-notes
-My notes from an online MySQL course ([index page](README.md))
+# MySQL HowTo
 
 1. [Using MySQL](Using_MySQL.md)
 2. [Inserting data](Inserting_Data.md)
