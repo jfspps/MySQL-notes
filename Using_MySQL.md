@@ -1,4 +1,4 @@
-# MySQL #
+# MySQL Databases #
 
 ## Creating Databases Code ##
 
@@ -56,7 +56,7 @@ SELECT database();
 
 If there is no database in use then a NULL database will be returned
 
-## SQL Data Types ##
+# SQL Data Types #
 
 SQL data types can be broadly divided into following categories.
 
@@ -67,7 +67,7 @@ SQL data types can be broadly divided into following categories.
 5. Binary data types such as ``binary, varbinary``
 6. Miscellaneous data types – ``clob, blob, xml, cursor, table``
 
-## Creating, verifying and dropping tables ##
+# Creating, verifying and dropping tables #
 
 Here is the generalised code which one uses to create tables in the current database:
 
@@ -123,4 +123,4 @@ DROP TABLE dogs;
 
 ## Comments ##
 
-Press CTRL-slash to toggle comments for a selected script. Or use -- before each line.
+Press CTRL-slash to toggle comments for a selected script. Or use ```--``` before each line.
