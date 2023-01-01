@@ -1,6 +1,6 @@
 # Introduction to MySQL
 
-1. [Using MySQL](Using_MySQL.md)
+1. [Databases and tables](Using_MySQL.md)
 2. [Inserting data](Inserting_Data.md)
 3. [Principles of CRUD in MySQL](CRUD.md) using `CREATE`, `SELECT`, `UPDATE` and `DELETE`
 4. [Common string functions](String_Functions.md) using `CONCAT`, `SUBSTRING`, `REPLACE`, `REVERSE`, `CHAR_LENGTH`, `UPPER` and `LOWER`
