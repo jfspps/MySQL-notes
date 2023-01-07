@@ -1,0 +1,9 @@
+// should make the left-hand nav menu scrollable (only applicable to Jekyll Leap Day theme)
+nav {
+    bottom: 0;
+    overflow-y: auto;
+}
+
+
+// add override above this point
+@import "{{ site.theme }}";
