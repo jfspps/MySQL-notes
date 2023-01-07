@@ -1,5 +1,9 @@
 # Introduction to MySQL
 
+Go [here](Installation.md) to install MySQL to Ubuntu. 
+
+More detailed MySQL documentation can found [here](https://dev.mysql.com/doc/).
+
 1. [Databases and tables](Using_MySQL.md)
 2. [Inserting data](Inserting_Data.md)
 3. [Principles of CRUD in MySQL](CRUD.md) using `CREATE`, `SELECT`, `UPDATE` and `DELETE`
