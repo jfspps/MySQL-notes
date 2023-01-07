@@ -2,20 +2,16 @@
 ---
 nav {
   left: 50%;
-  text-align: left;
   bottom: 0;
   overflow-y: auto;
 }
 
 footer {
-  width:180px;
-  position: fixed;
   right: 50%;
   left: unset;
   margin-right:-530px;
   margin-left: unset;
   top:220px;
   text-align: left;
-  line-height: 16px;
 }
 @import "{{ site.theme }}";
