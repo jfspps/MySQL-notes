@@ -1,11 +1,7 @@
 ---
 ---
 nav {
-  width: 230px;
-  position: fixed;
-  top: 220px;
   left: 50%;
-  margin-left:-580px;
   text-align: left;
   bottom: 0;
   overflow-y: auto;
@@ -14,8 +10,10 @@ nav {
 footer {
   width:180px;
   position: fixed;
-  right:50%;
+  right: 50%;
+  left: unset;
   margin-right:-530px;
+  margin-left: unset;
   top:220px;
   text-align: left;
   line-height: 16px;
