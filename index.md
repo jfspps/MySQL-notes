@@ -1,6 +1,6 @@
 # Introduction to MySQL
 
-Go [here](Installation.md) to install MySQL to Ubuntu. 
+Go [here](Installation.md) to install MySQL on Ubuntu. 
 
 More detailed MySQL documentation can found [here](https://dev.mysql.com/doc/).
 

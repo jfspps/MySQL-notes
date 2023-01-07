@@ -1,6 +1,6 @@
 # Installing MySQL #
 
-This outlines how to install to Ubuntu 20.04 based distros and quickly set up MySQL 5.7 (or later).
+This outlines how to install on Ubuntu 20.04 based distros and quickly set up MySQL 5.7 (or later).
 
 ```bash
 sudo apt update
@@ -98,7 +98,7 @@ sudo kill $(ps aux | grep mysql_secure_installation | grep -v grep | awk '{print
 
 ## Adding a new user ##
 
-I generally do not use ```root``` for typical database access and instead insert and assign privileges to a commanding MySQL user without full root access.
+I generally do not use MySQL's ```root``` for typical database access. Instead, I insert a new "power" user and assign the necessary privileges.
 
 Log in to MySQL:
 
