@@ -1,19 +1,78 @@
 ---
 ---
-// should make the left-hand nav menu scrollable (only applicable to Jekyll Leap Day theme)
 nav {
-    left: 50%;
-    bottom: 0;
-    overflow-y: auto;
+  width: 230px;
+  position: fixed;
+  top: 220px;
+  left:50%;
+  margin-left:-580px;
+  text-align: left;
+
+  ul {
+    list-style: none;
+    list-style-image:none;
+    font-size: 14px;
+    line-height:24px;
+
+    li {
+      padding: 5px 0px;
+      line-height: 16px;
+      // padding-right:17px;
+      // position:relative;
+      // right:-12px;
+
+      &.tag-h1 {
+        font-size: 1.2em;
+
+        a {
+          font-weight: bold;
+          color: #333;
+        }
+
+        + .tag-h2 {
+
+        }
+      }
+
+      &.tag-h2 {
+
+        + .tag-h1 {
+          margin-top:10px;
+        }
+      }
+
+       &.tag-h3 {
+        font-size: 0.8em;
+        padding-left:13px;
+        line-height: 1.0em;
+
+        // + .tag-h1 {
+        //  margin-top:10px;
+        // }
+      }
+
+   }
+
+    a {
+      color: #666;
+
+      &:hover { color: #1c1c1c; }
+    }
+
+    .active {
+      border-right:solid 4px #39C;
+      padding-right:13px;
+    }
+  }
 }
-// place the footer on the right-hand side
+
 footer {
-    width:180px;
-    position: fixed;
-    right:50%;
-    margin-right:-530px;
-    top:220px;
-    text-align: left;
-    line-height: 16px;
-  }  
+  width:180px;
+  position: fixed;
+  right:50%;
+  margin-right:-530px;
+  top:220px;
+  text-align: left;
+  line-height: 16px;
+}
 @import "{{ site.theme }}";
