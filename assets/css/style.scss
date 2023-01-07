@@ -6,4 +6,14 @@ nav {
     bottom: 0;
     overflow-y: auto;
 }
+// place the footer on the right-hand side
+footer {
+    width:180px;
+    position: fixed;
+    right:50%;
+    margin-right:-530px;
+    top:220px;
+    text-align: left;
+    line-height: 16px;
+  }  
 @import "{{ site.theme }}";
